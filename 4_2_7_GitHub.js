@@ -1,4 +1,4 @@
-let searchInput = document.querySelector(".search__input");
+let searchInput = document.querySelector("input");
 let listMenu = document.querySelector(".listMenu");
 let wrapper = document.querySelector(".wrapper");
 let cardList = {
@@ -53,6 +53,8 @@ searchInput.addEventListener("input", () => {
 })
 
 listMenu.addEventListener("click", (event) => {
+    clearListMenu(listMenu.children);
+    searchInput.value = "";
     let cardListKeys = Object.keys(cardList);
     let div = document.createElement('div');
     div.classList.add('card')

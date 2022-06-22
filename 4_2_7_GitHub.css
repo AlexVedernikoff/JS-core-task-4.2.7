@@ -12,8 +12,13 @@ body {
     width: 500px;
     height: 60px;
     margin: 0 auto;
-    font-size: 36px;
+    font-size: 48px;
     box-sizing: border-box;
+    padding-left: 13px;
+}
+
+.search input::placeholder {
+    font-size: 35px;
 }
 
 .listMenu {
@@ -32,6 +37,7 @@ body {
     cursor: pointer;
     height: 44px;
     border: 2px black solid;
+    padding-left: 13px;
 }
 
 .listMenu li:hover {
